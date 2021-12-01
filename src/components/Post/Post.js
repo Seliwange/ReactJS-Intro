@@ -1,12 +1,7 @@
 import './post.css';
 
-export default function Post(props){
-    const name = props.author.name;
-    const nickname = props.author.nickname;
-    const photo = props.author.photo;
-    const content = props.content;
-    const image = props.image;
-    const date = props.date;
+export default function Post({author, content, image, date}){
+    const {name, nickname, photo} = author;
 
     return (
         <div className="post">
